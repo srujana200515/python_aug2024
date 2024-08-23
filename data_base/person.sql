@@ -47,11 +47,14 @@ create table IF NOT EXISTS persons(id int primary key auto_increment , name varc
  
  insert into persons(name,gender,location,age) values('Nandini' ,'f' ,'belgavi',20);
  
- insert into persons(name,gender,location,age) values('Taniea' ,'f' ,'Honnavar',19);
- select name,location from persons;
+ insert  into persons(name,gender,location,age) values('Taniea' ,'f' ,'Honnavar',19);
+ select name,location  from persons; 
+
  
  select location from persons;
+
  select distinct location from persons;
+ 
  select * from persons where age < 50;
  select * from persons  where location='Raichur';
  select * from persons  where age between 15 and 20;
