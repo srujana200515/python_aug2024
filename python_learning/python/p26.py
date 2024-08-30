@@ -13,15 +13,15 @@ def is_prime(num):
         i += 6
     return True
 
-def nth_prime(n):
+def nth_prime(input_num):
     count = 0
     num = 1
-    while count < n:
+    while count < input_num:
         num += 1
         if is_prime(num):
             count += 1
     return num
 
-# Example usage:
-n = int(input("Enter the value of N: "))
-print(f"The {n}th prime number is {nth_prime(n)}")
+
+input_num = int(input("Enter the value of N: "))
+print(f"The {input_num}th prime number is {nth_prime(input_num)}")
